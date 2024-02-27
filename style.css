@@ -1,0 +1,729 @@
+body{
+    font-family: "Poppins", sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+:root{
+    --main-color:#e4b95b;
+    --trans-transition:0.5s ;
+}
+/* Main Tiitle */
+.main-tittle{
+   text-align: center;
+  
+
+}
+.main-tittle p{
+    color: #9a9a9a;
+}
+.main-tittle h1{
+    font-size: 35px;
+    margin: 10px 0;
+    letter-spacing:1px;
+}
+*{
+    padding: 0;
+    margin: 0 ;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+a{
+    
+    text-decoration: none;
+}
+li{
+ list-style: none;
+}
+/* Nav bar && Header */
+header{
+    background: url("imgaes/home_bg.jpeg") center no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+header::before{
+    content: " ";
+    position: absolute;
+    background-color: rgb(0 0 0/60%);
+    width: 100%;
+    height: 100%;
+}
+nav{
+   
+    display: flex;
+    justify-content: space-around;
+    padding: 0 80px;
+    align-items: center;
+    position: relative;
+   
+}
+nav .navL img{
+    width: 8%;
+
+}
+
+nav .navR ul{
+    display: flex;
+   color: white;
+   letter-spacing: 2px;
+
+}
+nav .navR ul a{
+    color: white;
+    font-size: 20px;
+    padding: 30px 15px;
+    transition: var(--trans-transition);
+    border-bottom: solid 3px transparent;
+   
+}
+nav .navR ul a:hover{
+    border-bottom: solid 3px var(--main-color);
+}
+header .describtion{
+    position: relative;
+margin-top: 200px;
+text-align: center;
+}
+header .describtion h1{
+    color: white;
+    font-size: 40px;
+
+}
+header .describtion h1 span{
+    color: var(--main-color);
+}
+header .describtion p{
+    color: whitesmoke;
+    margin: 20px 0;
+}
+header .describtion button{
+    color: white;
+    margin: 15px 0;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    
+    border-radius: 5px;
+    padding: 13px 23px;
+    background-color: transparent;
+    border: white solid 1px;
+    transition: var(--trans-transition);
+}
+header .describtion button:hover{
+    background-color: var(--main-color);
+    border: none;
+}
+/* Lover History */
+.LOVER{
+    background-color: #f4f4f4;
+   
+    padding: 30px 0;
+}
+.lover  .main-tittle{
+    color: #383848;
+}
+.lover .boxes{
+   
+    margin: 40px 0;
+    margin-top: 80px;
+    display: flex;
+    gap: 80px;
+    align-items: center;
+   
+}
+.lover .boxes .boxL{
+    width: 45%;
+}
+.lover .boxes .boxL p{
+    line-height: 1.5;
+    color: #9a9a9a;
+    font-size: 20px;
+}
+.lover .boxes .boxL button{
+   font-size: 18px;
+   padding: 10px 15px;
+   border-radius: 5px;
+   border: none;
+   color: white;
+   margin: 15px 0;
+   transition: var(--trans-transition);
+
+   background-color: #383848;
+}
+.lover .boxes .boxL button:hover{
+    background-color: var(--main-color);
+}
+.lover .boxes .boxR{
+    width: 45%;
+}
+.lover .boxes .boxR img{
+    width: 95%;
+}
+/* Special offer */
+.SPECIAL{
+    background-color: #1d1c22;
+    padding: 30px 0;
+}
+.special .main-tittle h1{
+    color: var(--main-color);
+
+}
+.special .Sboxes{
+    margin-top: 50px;
+    text-align: center;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.special .Sboxes .Sbox{
+    text-align: center;
+    width: 30%;
+}
+.special .Sboxes .Sbox img{
+    width: 50%;
+
+}
+.special .Sboxes .Sbox h1{
+color: white;
+margin: 15px 0;
+}
+.special .Sboxes .Sbox h5{
+font-weight: normal;
+color: #9a9a9a;
+margin: 20px 0;
+}
+.special .Sboxes .Sbox .line{
+    text-decoration:line-through;
+    color: white;
+    font-size: 13px;
+    margin-right: 5px;
+
+}
+.special .Sboxes .Sbox span{
+
+color: var(--main-color);
+}
+/* MENU */
+.MENU{
+    background-color: #f4f2ed;
+    padding: 30px 0;
+}
+.Mmenu{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+.Mmenu .MLboxes ,.Mmenu .MRboxes{
+    margin-top: 50px;
+    width: 100%;
+
+}
+.Mmenu .MLboxes .MLbox,.Mmenu .MRboxes .MLbox {
+ display: flex;
+ gap: 15px;
+ align-items: center;
+ margin-bottom: 25px;
+}
+.Mmenu .MLboxes .MLbox .Mimages ,.Mmenu .MRboxes .MLbox .Mimages {
+    width: 15%;
+
+}
+.Mmenu .MLboxes .MLbox .Mimages img ,.Mmenu .MRboxes .MLbox .Mimages img {
+    width: 100%;
+
+}
+
+.Mmenu .MLboxes .MLbox .Mtext  .Mnav,.Mmenu .MRboxes .MLbox .Mtext .Mnav{
+    padding-bottom: 10px;
+    border-bottom: dotted 1px black;
+    display: flex;
+    justify-content: space-between;
+
+}
+.Mmenu .MLboxes .MLbox .Mtext  .Mnav h2,.Mmenu .MRboxes .MLbox .Mtext .Mnav h2{
+    font-size: 15px;
+
+}
+.Mmenu .MLboxes .MLbox .Mtext  .Mnav span,.Mmenu .MRboxes .MLbox .Mtext .Mnav span{
+    color: var(--main-color);
+    font-weight: bold;
+    font-size: 20px;
+}
+.Mmenu .MLboxes .MLbox .Mtext p,.Mmenu .MRboxes .MLbox .Mtext p{
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: lighter;
+    line-height: 1.5;
+}
+.MRboxes .MLbox .Mimages img{
+ border-radius: 50%;
+
+}
+.menuR{
+    width: 50%;
+}
+.menu button{
+    display: block;
+    margin: auto;
+    align-items: center;
+    text-align: center;
+    background-color: var(--main-color);
+    color:white;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    margin: 20px auto;
+    transition: var(--trans-transition);
+
+}
+.menu button:hover{
+    background-color: #383848;
+}
+/* MEALS */
+.MEALS{
+    background: fixed url(imgaes/daytime_bg.jpeg) no-repeat center;
+    background-size: cover;
+    height: 300px;
+    padding: 20px 0;
+   
+}
+.MEALS .MEal{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    display: flex;
+    gap: 20px;
+}
+.MEALS .MEal .mealbox{
+    width: 22%;
+
+}
+.MEALS .MEal .mealbox img{
+    width: 40%;
+}
+.MEALS .MEal .mealbox h1{
+    color: white;
+    margin: 15px 0;
+    font-size: 30px;
+    letter-spacing: 2px;
+
+}
+.MEALS .MEal .mealbox  p{
+color: white;
+}
+/* GALLERY */
+.GALLERY{
+    background-color: #1c1b21;
+    padding: 30px 0 60px 0;
+}
+.GALLERY .main-tittle{
+    color: white;
+    margin:30px 0;
+}
+.Gaboxes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    
+}
+.Gaboxes .Gbox{
+    width: 28%;
+    position: relative;
+}
+.Gaboxes .Gbox::before{
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0/40%);
+}
+.Gaboxes .Gbox:hover::before{
+    background: rgb(0 0 0/0%);
+}
+.Gaboxes .Gbox img{
+    width: 100%;
+    height: 250px;
+    border-radius: 10px;
+}
+/* contact */
+.CONTACT{
+background-color: #f4f2ed;
+padding: 40px 0;
+
+}
+.Contact{
+    display: flex;
+    gap: 10px;
+    width: 60%;
+    align-items: center;
+}
+.Contact .ConL{
+    width: 48%;
+    
+}
+.Contact .ConL h1{
+    color:#383848;
+    margin: 15px 0;
+}
+.Contact .ConL .icon{
+    display: block;
+    color: var(--main-color);
+    font-size: 20px;
+    margin: 10px 0;
+
+}
+.Contact .ConL .icon span{
+    margin-left: 10px;
+    color: #9a9a9a;
+}
+.Contact .ConL p{
+    line-height: 2;
+    color: #9a9a9a;
+}
+.Contact .ConL .media{
+    font-size: 30px;
+    border-radius: 50%;
+    color: #f4f2ed;
+    padding: 8px;
+    margin-right: 5px;
+    background-color: #383848;
+    transition: var(--trans-transition);
+}
+.Contact .ConL .media:hover{
+    background-color: var(--main-color);
+    color: #383848;
+}
+.Contact .ConR{
+    width: 48%;
+}
+
+.Contact .ConR  input{
+    border: none;
+    outline: none;
+    background-color: #e3e2dd;
+    width: 90%;
+    margin-bottom: 10px;
+    padding: 15px 5px;
+}
+.Contact .ConR textarea{
+    border: none;
+    outline: none;
+    background-color: #e3e2dd;
+    width: 90%;
+    margin-bottom: 10px;
+    padding: 15px 5px;
+}
+.Contact .ConR button{
+    outline: none;
+    border: none;
+    font-size: 18px;
+    border-radius: 10px;
+    padding: 10px 15px;
+    color: white;
+    background-color: var(--main-color);
+    margin: 20px 0;
+    transition: var(--trans-transition);
+}
+.Contact .ConR button:hover{
+    background-color: #383848;
+}
+footer{
+    background-color: #383848;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+
+}
+footer a{
+    color: white;
+    transition: var(--trans-transition);
+}
+footer a:hover{
+    color: var(--main-color);
+}
+/* media quary */
+@media screen and (max-width : 480px) {
+    nav{
+        padding: 0;
+        flex-direction: column;
+        
+    }
+    nav .navR ul{
+        display: flex;
+        justify-content: space-around;
+    }
+    nav .navR ul a{
+        padding: 10px 5px;
+        font-size: 18px;
+    }
+    nav .navL {
+        width: 100%;
+        text-align: center;
+    }
+    nav .navL img{
+        width: 20%;
+    }
+    nav .navR{
+       
+        width: 50%;
+    }
+    .lover .boxes .boxL{
+        width: 100%;
+    }
+    .lover .boxes .boxR{
+        display: none;
+    }
+    /* special offer */
+    .special .Sboxes{
+        flex-direction: column;
+    }
+    .special .Sboxes .Sbox{
+        width: 100%;
+    }
+    /* MENU */
+    .MEALS{
+        height: 900px;
+        padding: 0;
+    }
+    .Mmenu{
+        flex-direction: column;
+    }
+    
+    .menuR{
+        width: 100%;
+    }
+    .Mmenu .MLboxes .MLbox,.Mmenu .MRboxes .MLbox {
+       flex-direction: column;
+       }
+    .Mmenu .MLboxes .MLbox .Mimages ,.Mmenu .MRboxes .MLbox .Mimages {
+        width:50%;
+    
+    }
+    /* MEALS */
+    .MEALS .MEal{
+        flex-direction: column;
+    }
+    .MEALS .MEal .mealbox{
+        width: 100%;
+    
+    }
+    /* GALLERY */
+    .Gaboxes{
+        flex-direction: column;
+    }
+    .Gaboxes .Gbox{
+        width: 100%;
+    }
+    /* contact */
+    .Contact{
+        flex-direction: column;
+        width: 80%;
+    }
+    .Contact .ConL{
+        width: 100%;
+        text-align: center;
+    }
+    .Contact .ConR{
+        width: 100%;
+    }
+
+
+
+
+}
+@media screen and (min-width : 481px) and (max-width : 770px){
+    nav{
+        padding: 0;
+        flex-direction: column;
+        align-items: start;
+    }
+    nav .navR ul{
+        display: flex;
+        justify-content: space-around;
+    }
+    nav .navR ul a{
+        padding: 10px 5px;
+        font-size: 18px;
+    }
+    nav .navL {
+        width: 100%;
+        text-align: center;
+    }
+    nav .navL img{
+        width: 20%;
+    }
+    nav .navR{
+       
+        width: 100%;
+    }
+    .lover .boxes .boxL{
+        width: 100%;
+    }
+    .lover .boxes .boxR{
+        display: none;
+    }
+    /* special offer */
+    .special .Sboxes{
+        flex-direction: column;
+    }
+    .special .Sboxes .Sbox{
+        width: 100%;
+    }
+    /* MENU */
+    .MEALS{
+        height: 900px;
+        padding: 0;
+    }
+   
+    .menuL{
+        width: 50%;
+    }
+    
+    .menuR{
+        width: 50%;
+    }
+    .Mmenu .MLboxes .MLbox,.Mmenu .MRboxes .MLbox {
+       flex-direction: column;
+       }
+    .Mmenu .MLboxes .MLbox .Mimages ,.Mmenu .MRboxes .MLbox .Mimages {
+        width:50%;
+    
+    }
+    /* MEALS */
+    .MEALS{
+        height: 600px;
+        padding: 20px 0;
+    }
+    .MEALS .MEal{
+      
+        flex-wrap: wrap;
+        justify-content: space-around;
+        
+    }
+    .MEALS .MEal .mealbox{
+        width: 45%;
+    
+    }
+    /* GALLERY */
+    .Gaboxes{
+        flex-wrap: wrap;
+    }
+    .Gaboxes .Gbox{
+        width: 48%;
+    }
+    /* contact */
+    .Contact{
+        
+        width: 90%;
+    }
+    .Contact .ConL{
+        width: 50%;
+        text-align: center;
+    }
+    .Contact .ConR{
+        width: 50%;
+    }
+}
+@media screen and (min-width : 771px) and (max-width : 1100px){
+    nav{
+        padding: 0;
+        flex-direction: column;
+        align-items: start;
+    }
+    nav .navR ul{
+        display: flex;
+        justify-content: space-around;
+    }
+    nav .navR ul a{
+        padding: 10px 5px;
+        font-size: 18px;
+    }
+    nav .navL {
+        width: 100%;
+        text-align: center;
+    }
+    nav .navL img{
+        width: 20%;
+    }
+    nav .navR{
+       
+        width: 100%;
+    }
+    .lover .boxes .boxL{
+        width: 60%;
+    }
+    .lover .boxes .boxR{
+        width: 50%;
+    }
+    .lover .boxes .boxR img{
+        width: 100%;
+    }
+    /* special offer */
+    .special .Sboxes{
+        flex-direction: column;
+    }
+    .special .Sboxes .Sbox{
+        width: 100%;
+    }
+    /* MENU */
+    .MEALS{
+        height: 900px;
+        padding: 0;
+    }
+    
+    .menuL{
+        width: 50%;
+    }
+    
+    .menuR{
+        width: 50%;
+    }
+    .Mmenu .MLboxes .MLbox,.Mmenu .MRboxes .MLbox {
+       flex-direction: column;
+       }
+    .Mmenu .MLboxes .MLbox .Mimages ,.Mmenu .MRboxes .MLbox .Mimages {
+        width:50%;
+    
+    }
+    /* MEALS */
+    .MEALS{
+        height: 600px;
+        padding: 20px 0;
+    }
+    .MEALS .MEal{
+      
+        flex-wrap: wrap;
+        justify-content: space-around;
+        
+    }
+    .MEALS .MEal .mealbox{
+        width: 45%;
+    
+    }
+    /* GALLERY */
+    .Gaboxes{
+        flex-wrap: wrap;
+    }
+    .Gaboxes .Gbox{
+        width: 48%;
+    }
+    /* contact */
+    .Contact{
+        
+        width: 95%;
+    }
+    .Contact .ConL{
+        width: 50%;
+        text-align: center;
+    }
+    .Contact .ConR{
+        width: 50%;
+    }
+}
